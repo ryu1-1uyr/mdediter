@@ -10,12 +10,17 @@
         </div>
       </div>
     </div>
+
+    <upload></upload>
+
   </div>
 </template>
 
 <script>
   import VueMarkdown from 'vue-markdown'
   import TextAreaWithEmojiSuggest from './TextAreaWithEmojiSuggest.vue'
+  import Upload from './Upload.vue'
+
   export default {
     name: 'app',
     data () {
@@ -29,8 +34,9 @@
       }
     },
     components: {
-      VueMarkdown,
-      TextAreaWithEmojiSuggest
+        VueMarkdown,
+        TextAreaWithEmojiSuggest,
+        Upload
     }
   }
 </script>
